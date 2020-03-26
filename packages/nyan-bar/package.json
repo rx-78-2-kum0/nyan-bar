@@ -1,0 +1,29 @@
+{
+  "name": "nyan-bar",
+  "version": "0.0.0",
+  "description": "nyan-mode on the web.",
+  "keywords": [
+    "nyan"
+  ],
+  "author": "kum0 <zy.hua1122@qq.com>",
+  "homepage": "https://github.com/kum0/nyan-bar",
+  "license": "ISC",
+  "main": "lib/nyan-bar.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kum0/nyan-bar.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/kum0/nyan-bar/issues"
+  }
+}
