@@ -2,7 +2,7 @@
   "name": "example",
   "version": "0.0.1",
   "description": "example",
-  "author": "kum0 <zy.hua1122@qq.com>",
+  "author": "rx-78-2-kum0 <zy.hua1122@qq.com>",
   "homepage": "",
   "license": "ISC",
   "main": "lib/example.js",
@@ -22,15 +22,15 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "html-webpack-plugin": "^4.0.2",
-    "nyan-bar": "^0.0.0",
-    "webpack-dev-server": "^3.10.3"
+    "nyan-bar": "^0.0.1"
   },
   "devDependencies": {
     "http-server": "^0.12.1",
     "ts-loader": "^6.2.2",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",
+    "webpack-dev-server": "^3.10.3",
+    "html-webpack-plugin": "^4.0.2",
     "webpack-cli": "^3.3.11"
   },
   "gitHead": "29287684e1307844fc0e01dde2e3396078d10da5"
