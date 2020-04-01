@@ -3,3 +3,8 @@ export interface NyanOption {
   height: number;
   wavy?: boolean;
 }
+
+export interface RenderCache {
+  data: ImageData;
+  i: number;
+}

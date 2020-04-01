@@ -1,4 +1,4 @@
-import { NyanOption } from './interface';
+import { NyanOption, RenderCache } from './interface';
 import nyanImg from './assets/nyan.png';
 
 export class NyanMode {
@@ -21,6 +21,10 @@ export class NyanMode {
   private _catData: ImageData = {} as ImageData;
   private _i = 0;
   private _total = 0;
+  private _renderCache: RenderCache = {
+    data: {} as ImageData,
+    i: 0
+  };
 
   constructor(opt: NyanOption) {
     this._option = opt;
@@ -126,8 +130,11 @@ export class NyanMode {
       this._i = 0;
       return;
     }
-
     this._ctx.clearRect(0, 0, this._cvs.width, this._cvs.height);
+
+    if (this._renderCache.i > this._i) {
+    } else {
+    }
 
     this._ctx.putImageData(this._catData, this._rainbowW * this._i, 0);
 
@@ -136,6 +143,11 @@ export class NyanMode {
     } else {
       this._straightRender();
     }
+
+    this._renderCache = {
+      data: this._ctx.getImageData(0, 0, this._rainbowW * this._i, this._imgWH.h),
+      i: this._i
+    };
 
     this._ctx.translate(0.5, 0.5);
 
