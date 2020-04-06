@@ -1,11 +1,16 @@
 {
-  "packages": ["packages/*"],
-  "version": "0.2.0",
+  "packages": [
+    "packages/*"
+  ],
+  "version": "0.2.1",
   "useWorkspaces": true,
   "npmClient": "yarn",
   "command": {
     "publish": {
-      "ignoreChanges": ["**/example/**", "**/test/**"]
+      "ignoreChanges": [
+        "**/example/**",
+        "**/test/**"
+      ]
     }
   }
 }

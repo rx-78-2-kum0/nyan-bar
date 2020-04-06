@@ -1,7 +1,7 @@
 {
   "name": "example",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "example",
   "author": "rx-78-2-kum0 <zy.hua1122@qq.com>",
   "homepage": "",
@@ -23,7 +23,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "nyan-mode": "^0.2.0"
+    "nyan-mode": "^0.2.1"
   },
   "devDependencies": {
     "html-webpack-plugin": "^4.0.2",
