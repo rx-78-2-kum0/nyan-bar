@@ -1,4 +1,4 @@
-import { NyanMode } from 'nyan-mode';
+import { NyanMode } from './nyan';
 
 window.onload = () => {
   const e = document.getElementById('div');
@@ -6,7 +6,7 @@ window.onload = () => {
 
   NyanMode.New({
     width: 1000,
-    height: 32,
-    wavy: false
+    height: 16,
+    wavy: true,
   }).create(e!, t!);
 };
